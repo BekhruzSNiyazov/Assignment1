@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block body %}
+
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/index.css')}}">
+
+    <center><h1>Animals</h1></center>
+
+    <div class="container">
+
+        <!-- dogs -->
+        <div class="background-image" id="dogs">
+            <p class="content">
+                <span class="heading">Dogs</span><br>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a amet dolore repellendus accusamus modi.</span><br>
+                <button onclick="redirect('/dogs')">Learn more</button>
+            </p>
+        </div>
+
+        <!-- cats -->
+        <div class="background-image" id="cats">
+            <p class="content">
+                <span class="heading">Cats</span><br>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quo, quam explicabo ab voluptates vero.</span><br>
+                <button onclick="redirect('/cats')">Learn more</button>
+            </p>
+        </div>
+
+        <!-- horses -->
+        <div class="background-image" id="horses">
+            <p class="content">
+                <span class="heading">Horses</span><br>
+                <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque ad error quas cum iusto temporibus.</span><br>
+                <button onclick="redirect('/horses')">Learn more</button>
+            </p>
+        </div>
+
+        <!-- rabbits -->
+        <div class="background-image" id="rabbits">
+            <p class="content">
+                <span class="heading">Rabbits</span><br>
+                <span class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, qui? Laboriosam ut officiis deserunt pariatur!</span><br>
+                <button onclick="redirect('/rabbits')">Learn more</button>
+            </p>
+        </div>
+
+    </div>
+
+{% endblock %}

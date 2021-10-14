@@ -1,0 +1,31 @@
+body {
+    background-color: #fff9ec;
+    font-family: sans-serif;
+    color: rgb(50, 50, 50);
+    font-size: 2em;
+}
+
+button {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: rgb(78, 75, 255);
+    padding: 1vh 1vw;
+    border-radius: 25px;
+    font-size: 80%;
+    border: none;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: rgb(114, 111, 255);
+}
+
+.heading {
+    font-weight: bolder;
+    font-size: 140%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}

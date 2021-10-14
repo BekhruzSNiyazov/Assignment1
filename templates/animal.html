@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}{{ animals }}{% endblock %}
+{% block body %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/animal.css') }}">
+    <br>
+    <div class="heading">{{ animals }}</div>
+    <br>
+
+    <div class="container">
+        {% for animal in data %}
+            <div class="child">
+                <center><img src="{{ data[animal]['image_url'] }}"></center><br>
+                <strong>{{ animal }}</strong><br>
+                <ul>
+                    <li>Price: {{ data[animal]["price"] }}</li>
+                    <li>Description: {{ data[animal]["description"] }}</li>
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+    <br>
+    <button onclick="redirect('/')">Go back to Home Page</button>
+
+{% endblock %}
